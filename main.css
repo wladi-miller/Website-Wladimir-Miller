@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+}
+
+.inhalt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(56, 56, 124);
+}
+
+.head {
+  background-color: rgb(197, 210, 211);
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.box {
+  background: rgb(197, 210, 211);
+  padding: 10px;
+  text-align: center;
+  /*  box-shadow: 0 8px 20px rgb(31, 34, 103); */
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: rgb(197, 210, 211);
+  font-size: 30px;
+  font-size: 1.5em;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #00eaff, 0 0 30px rgb(31, 34, 103);
+}
+
+.stars {
+  font-size: 18px;
+  color: gold;
+  padding: 0px;
+}
+
+.stars .empty {
+  color: rgb(12, 12, 12);
+}
+
+.sidebar {
+  background-color: rgb(197, 210, 211);
+  background: linear-gradient(to bottom, rgb(197, 210, 211), rgb(31, 34, 103));
+  display: flex;
+  padding: 10px;
+  height: auto;
+  flex-direction: column;
+  width: 20%;
+  box-sizing: border-box;
+  border-right: 2px solid grey;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20%;
+  background: linear-gradient(to bottom, rgb(197, 210, 211), rgb(31, 34, 103));
+  color: #fff;
+  text-shadow: 0 0 10px #0f0f0f, 0 0 20px #00eaff, 0 0 30px rgb(31, 34, 103);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.image-container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 1s ease;
+}
+.image-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* MEDIA QERIES> stellt die Auflösung 
+für mobil Geräte usw. */
+@media only screen and (max-width: 1150px) {
+  .head {
+    background-color: rgb(197, 210, 211);
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    background: linear-gradient(
+      to bottom,
+      rgb(197, 210, 211),
+      rgb(31, 34, 103)
+    );
+    color: #fff;
+    text-shadow: 0 0 10px #0f0f0f, 0 0 20px #00eaff, 0 0 30px rgb(31, 34, 103);
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+}
